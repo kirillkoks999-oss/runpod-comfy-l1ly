@@ -11,7 +11,7 @@ import os
 downloads = [
     ("rillky/LilyQwen", "L1ly.safetensors", "/comfyui/models/diffusion_models"),
     ("Comfy-Org/Qwen-Image_ComfyUI", "split_files/vae/qwen_image_vae.safetensors", "/comfyui/models/vae"),
-    ("Comfy-Org/Qwen-Image_ComfyUI", "split_files/text_encoders/qwen_2.5_vl_7b_bf16.safetensors", "/comfyui/models/text_encoders"),
+    ("Comfy-Org/Qwen-Image_ComfyUI", "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors", "/comfyui/models/text_encoders"),
 ]
 
 for repo_id, filename, target in downloads:
