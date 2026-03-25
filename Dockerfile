@@ -1,3 +1,3 @@
-FROM runpod/worker-comfyui:5.1.0-base
+FROM runpod/worker-comfyui:5.8.5-base
 
 CMD ["/bin/bash", "-lc", "rm -rf /comfyui/models/vae /comfyui/models/text_encoders /comfyui/models/diffusion_models && ln -s /runpod-volume/comfyui/models/vae /comfyui/models/vae && ln -s /runpod-volume/comfyui/models/text_encoders /comfyui/models/text_encoders && ln -s /runpod-volume/comfyui/models/diffusion_models /comfyui/models/diffusion_models && echo '=== CHECK VAE ===' && ls -lh /comfyui/models/vae && echo '=== CHECK TEXT_ENCODERS ===' && ls -lh /comfyui/models/text_encoders && echo '=== CHECK DIFFUSION_MODELS ===' && ls -lh /comfyui/models/diffusion_models && /start.sh"]
